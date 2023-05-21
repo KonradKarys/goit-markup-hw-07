@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,19 +21,19 @@
 <body>
   <header class="page-header">
     <div class="container container-class">
-      <div class="logo-position">
-        <a class="logo" href="./index.html"><span class="blue-font">Web</span>Studio</a>
+      <div class="logo">
+        <a class="logo-light" href="./index.html"><span class="logo-hover">Web</span>Studio</a>
       </div>
-      <div class="menu-position">
+      <div class="header-navigation">
         <nav>
-          <ul class="menu1">
-            <li class="item">
-              <a class="another-none active" href="./index.html">Agencja</a>
+          <ul class="navi">
+            <li class="navi-item">
+              <a class="navi-link  active" href="./index.html">Agencja</a>
             </li>
-            <li class="item">
-              <a class="another-none" href="./portfolio.html">Portfolio</a>
+            <li class="navi-item">
+              <a class="navi-link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="item"><a class="another-none" href="#">Kontakt</a></li>
+            <li class="navi-item"><a class="navi-link" href="#">Kontakt</a></li>
           </ul>
         </nav>
       </div>
@@ -64,14 +64,14 @@
     <section class="img">
       <div class="img-background">
         <h1>EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
-        <button class="button-place" data-modal-open>Zamów usługe</button>
+        <button class="button-start" data-modal-open>Zamów usługe</button>
       </div>
     </section>
     <section class="section1">
       <div class="container">
         <ul class="about-us">
           <li>
-            <div class="background-svg">
+            <div class="about-us__background">
               <svg class="about-us-svg" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
@@ -83,7 +83,7 @@
             </p>
           </li>
           <li>
-            <div class="background-svg">
+            <div class="about-us__background">
               <svg class="about-us-svg" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
@@ -95,7 +95,7 @@
             </p>
           </li>
           <li>
-            <div class="background-svg">
+            <div class="about-us__background">
               <svg class="about-us-svg" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
@@ -107,7 +107,7 @@
             </p>
           </li>
           <li>
-            <div class="background-svg">
+            <div class="about-us__background">
               <svg class="about-us-svg" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
@@ -124,25 +124,25 @@
     <!--Czym się zajmujemy-->
     <section class="section">
       <div class="container">
-        <h2 class="h2">Czym się zajmujemy</h2>
-        <div class="portfolio card-index">
-          <div class="thumb">
-            <div class="item">
+        <h2 class="container-title">Czym się zajmujemy</h2>
+        <div class="card">
+          <div class="card-thumb">
+            <div class="card-item">
               <img src="images/index-picture/img.jpg" alt="computer" width="350" height="300" />
             </div>
-            <p class="label">APLIKACJE KOMPUTEROWE</p>
+            <p class="card-label">APLIKACJE KOMPUTEROWE</p>
           </div>
-          <div class="thumb">
-            <div class="item">
+          <div class="card-thumb">
+            <div class="card-item">
               <img src="images/index-picture/img3.jpg" alt="mobile" width="350" height="300" />
             </div>
-            <p class="label">APLIKACJE MOBILNE</p>
+            <p class="card-label">APLIKACJE MOBILNE</p>
           </div>
-          <div class="thumb">
-            <div class="item">
+          <div class="card-thumb">
+            <div class="card-item">
               <img src="images/index-picture/img1.jpg" alt="tablet" width="350" height="300" />
             </div>
-            <p class="label">ROZWIĄZANIA GRAFICZNE</p>
+            <p class="card-label">ROZWIĄZANIA GRAFICZNE</p>
           </div>
         </div>
       </div>
@@ -152,102 +152,102 @@
 
     <section class="section ower-team">
       <div class="container">
-        <h2 class="h2">Nasz zespół</h2>
-        <ul class="card-index">
-          <li class="tile">
+        <h2 class="container-title">Nasz zespół</h2>
+        <ul class="team">
+          <li class="team-tile">
             <div>
               <img src="images/index-picture/Franek.jpg" alt="John_Doe3" width="270" height="260" />
               <h3>John Doe</h3>
               <p>Product Designer</p>
               <div class="team-svg">
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></a>
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg></a>
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg></a>
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </div>
             </div>
           </li>
-          <li class="tile">
+          <li class="team-tile">
             <div>
               <img src="images/index-picture/Iwona.jpg" alt="John_Doe2" width="270" height="260" />
               <h3>John Doe</h3>
               <p>Frontend Developer</p>
               <div class="team-svg">
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></a>
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg></a>
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg></a>
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </div>
             </div>
           </li>
-          <li class="tile">
+          <li class="team-tile">
             <div>
               <img src="images/index-picture/Janek.jpg" alt="John_Doe3" width="270" height="260" />
               <h3>John Doe</h3>
               <p>Marketing</p>
               <div class="team-svg">
-                <a class="background-team-svg" href="#">
-                  <svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#">
+                  <svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-                <a class="background-team-svg" href="#">
-                  <svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#">
+                  <svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a class="background-team-svg" href="#">
-                  <svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#">
+                  <svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a class="background-team-svg" href="#">
-                  <svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#">
+                  <svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </div>
             </div>
           </li>
-          <li class="tile">
+          <li class="team-tile">
             <div>
               <img src="images/index-picture/Stefan.jpg" alt="John_Doe4" width="270" height="260" />
               <h3>John Doe</h3>
               <p>UI Designer</p>
               <div class="team-svg">
-                <a class="background-team-svg" href="#"><svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#"><svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></a>
-                <a class="background-team-svg" href="#">
-                  <svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#">
+                  <svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a class="background-team-svg" href="#">
-                  <svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#">
+                  <svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a class="background-team-svg" href="#">
-                  <svg class="team-svg-icon" width="20px" height="20px">
+                <a class="team-background" href="#">
+                  <svg class="team-svg" width="20px" height="20px">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -260,46 +260,46 @@
     <!--Nasi Klienci-->
     <section>
       <div class="container">
-        <h2 class="h2">Nasi Klienci</h2>
-        <ul class="us-clients">
+        <h2 class="container-title">Nasi Klienci</h2>
+        <ul class="clients">
           <li>
-            <a class="clients" href="#">
-              <svg class="item-client" width="106px" height="60px">
+            <a class="clients-link" href="#">
+              <svg class="client-item" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-ya-co"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="clients" href="#">
-              <svg class="item-client" width="106px" height="60px">
+            <a class="clients-link" href="#">
+              <svg class="client-item" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-tag-line-here"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="clients" href="#">
-              <svg class="item-client" width="106px" height="60px">
+            <a class="clients-link" href="#">
+              <svg class="client-item" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-company"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="clients" href="#">
-              <svg class="item-client" width="106px" height="60px">
+            <a class="clients-link" href="#">
+              <svg class="client-item" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-foster-peters"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="clients" href="#">
-              <svg class="item-client" width="106px" height="60px">
+            <a class="clients-link" href="#">
+              <svg class="client-item" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-brand"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="clients" href="#">
-              <svg class="item-client" width="106px" height="60px">
+            <a class="clients-link" href="#">
+              <svg class="client-item" width="106px" height="60px">
                 <use href="./images/icons.svg#icon-company-tag-line"></use>
               </svg>
             </a>
@@ -311,8 +311,8 @@
 
   <footer>
     <div class="container-footer">
-      <div class="footer-block">
-        <a class="logo logo-color" href="#"><span class="blue-font">Web</span>Studio</a>
+      <div class="container">
+        <a class="logo logo-dark" href="#"><span class="logo-color">Web</span>Studio</a>
 
         <address>
           <ul>
@@ -322,46 +322,46 @@
           </ul>
         </address>
 
-        <div class="footer-color">
+        <div class="contacts">
           <ul>
             <li><a href="mailto:info@example.com">info@example.com</a></li>
             <li><a href="tel:48111111111">+48 111 111 111</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-block1">
-        <div class="join-to-us">
+      <div class="join-to-us">
+        <div class="join-to-us-title">
           <p>DOŁĄCZ DO NAS</p>
 
           <ul>
             <li>
-              <a class="item-svg-footer" href="#"><svg width="20px" height="20px">
+              <a class="join-to-us-svg" href="#"><svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg></a>
             </li>
 
             <li>
-              <a class="item-svg-footer" href="#"><svg width="20px" height="20px">
+              <a class="join-to-us-svg" href="#"><svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg></a>
             </li>
 
             <li>
-              <a class="item-svg-footer" href="#"><svg width="20px" height="20px">
+              <a class="join-to-us-svg" href="#"><svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg></a>
             </li>
 
             <li>
-              <a class="item-svg-footer" href="#"><svg width="20px" height="20px">
+              <a class="join-to-us-svg" href="#"><svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg></a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="footer-block2">
-        <h4 class="newsletter-h4">ZAPISZ SIĘ DO NEWSLETTERRA</h4>
+      <div class="newsletter">
+        <h4 class="newsletter-title">ZAPISZ SIĘ DO NEWSLETTERRA</h4>
         <div class="newsletter-block">
           <form class="newsletter-label">
             <label for="review">
@@ -369,7 +369,7 @@
             </label>
           </form>
           <button class="newsletter-button" type="submit">
-            Zapisz się<svg class="svg-icon-send" width="24px" height="24px">
+            Zapisz się<svg class="newsletter-icon" width="24px" height="24px">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
