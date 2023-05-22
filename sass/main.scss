@@ -1,2 +1,7 @@
-@import".components/navigations"; 
-@import".compoments/page-header";
+@use".components/navigations"; 
+@use".compoments/page-header";
+@use".compoments/container";
+@use".compoments/page-footer";
+@use".compoments/logo";
+@use".compoments/section";
+@use".utils/vars";
