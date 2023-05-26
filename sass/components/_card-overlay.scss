@@ -1,19 +1,4 @@
-.modal {
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 300px;
-    background-color: teal;
-    position: fixed;
-    z-index: 1;
-    transition-property: visibility, opacity, transform;
-    transition-duration: 2s;
-    transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg)
-      skew(0deg, 0deg);
-    opacity: 1;
-    visibility: visible;
-    display: block;
-  }
+
   
   .is-hidden {
     pointer-events: none;
@@ -120,4 +105,7 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
+  }
+  .card-thumb > .card-label:not(:last-child) {
+    margin-right: 30px;
   }

@@ -12,11 +12,20 @@
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
+
   .modal {
+    height: 300px;
+    z-index: 1;
+    transition-property: visibility, opacity, transform;
+    transition-duration: 2s;
+    transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg)
+      skew(0deg, 0deg);
+    opacity: 1;
+    visibility: visible;
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
     background-color: #ffffff;
