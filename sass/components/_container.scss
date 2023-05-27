@@ -1,11 +1,10 @@
 .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    line-height: 100%;
-    padding: 0 15px;
-  }
-  .container-class {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 100%;
+  padding: 0 15px;
+  &-class {
     width: 100%;
     line-height: 100%;
     margin: 0 auto;
@@ -14,14 +13,17 @@
     justify-content: space-between;
     align-items: center;
   }
-  .page-footer {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    line-height: 100%;
-  }
-  .container-title {
+  &-title {
     align-items: center;
     padding: 94px 0px 50px 0px;
   }
+}
+
+.page-footer {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 100%;
+}
+

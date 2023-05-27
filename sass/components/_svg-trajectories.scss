@@ -1,4 +1,4 @@
-.about-us-background{
+.about-us__background{
     background-color: rgba(245, 244, 250, 1);
     width: 270px;
     height: 120px;
@@ -6,13 +6,14 @@
     justify-content: center;
     padding-top: 25px;
     text-align: center;
+    &-svg {
+      display: flex;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+    }
   }
-  .about-us-svg {
-    display: flex;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-  }
+ 
   .team-icon {
     fill: rgba(175, 177, 184, 1);
     padding-top: 16px;
@@ -22,7 +23,6 @@
     display: flex;
     justify-content: space-around;
   }
-  
   .team-background {
     fill: rgba(175, 177, 184, 1);
     list-style-type: none;
@@ -32,25 +32,14 @@
     width: 44px;
     height: 44px;
     justify-content: space-around;
+    &:hover,
+    &:focus {
+      fill: #ffffff;
+      background-color: #2196f3;
+      cursor: pointer;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
-  .team-background:hover,
-  .team-background:focus {
-    fill: #ffffff;
-    background-color: #2196f3;
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .join-to-us-svg:hover {
-    background-color: #2196f3;
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .join-to-us-svg:focus {
-    background-color: #2196f3;
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
   .join-to-us-svg {
     display: flex;
     align-items: center;
@@ -61,11 +50,20 @@
     fill: #ececec;
     height: 44px;
     width: 44px;
+    &:hover {
+      background-color: #2196f3;
+      cursor: pointer;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:focus {
+      background-color: #2196f3;
+      cursor: pointer;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
   .icons-footer {
     display: flex;
   }
-  
   .newsletter-icon {
     fill: #ffffff;
     width: 24px;

@@ -15,10 +15,7 @@
   gap: 30px;
   height: 100%;
   flex-basis: calc((100% - 2 * 30px) / 3);
-  &-set img {
-    display: block;
-    width: 100%;
-  }
+
   &-set {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -31,17 +28,30 @@
     overflow: hidden;
     margin: 0 auto;
     z-index: 0;
-  }
-  &-set:focus,
-  &-set:hover {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    &:focus,
+    &:hover {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    & img {
+      display: block;
+      width: 100%;
+    }
+    &:hover .overlay__function {
+      -webkit-transition-duration: 250ms;
+      transition-duration: 250ms;
+      -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      -webkit-transform: translatex(0);
+      transform: translatex(0);
+    }
   }
+
   &-title {
     padding: 24px 20px;
     border-bottom: 1px solid #eeeeee;
@@ -61,31 +71,13 @@
   position: relative;
   overflow: hidden;
 }
-.card-set:hover .overlay__function {
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transform: translatex(0);
-  transform: translatex(0);
-}
+
 .overlay {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
-  &__function {
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: rgba(33, 150, 243, 0.9);
-    -webkit-transform: translateY(200%);
-    transform: translateY(200%);
-    -webkit-transition: -webkit-transform 500ms ease;
-    transition: -webkit-transform 500ms ease;
-    transition: transform 500ms ease;
-    transition: transform 500ms ease, -webkit-transform 500ms ease;
-  }
+
   &__description {
     font-size: 18px;
     color: #fff;
@@ -98,18 +90,25 @@
     z-index: 1;
   }
   &__function {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    -webkit-transform: translateY(200%);
+    transform: translateY(200%);
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: -webkit-transform 500ms ease;
+    transition: transform 500ms ease;
+    transition: transform 500ms ease, -webkit-transform 500ms ease;
     display: inline-block;
     background-color: rgba(33, 150, 243, 0.9);
+    &:is(:hover) {
+      -webkit-transition-duration: 250ms;
+      transition-duration: 250ms;
+      -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      -webkit-transform: translatex(0);
+      transform: translatex(0);
+    }
   }
-  &__function:is(:hover) {
-    -webkit-transition-duration: 250ms;
-    transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transform: translatex(0);
-    transform: translatex(0);
-  }
-}
-.card-thumb > .card-label:not(:last-child) {
-  margin-right: 30px;
 }

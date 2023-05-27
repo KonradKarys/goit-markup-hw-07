@@ -12,20 +12,17 @@
     list-style-type: none;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
+    &:hover .client-item,
+    &:focus .client-item,
+    &:hover,
+    &:focus {
+      fill: rgba(33, 150, 243, 1);
+      border-color: #2196f3;
+      cursor: pointer;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
-  &-link:hover .client-item,
-  &-link:focus .client-item,
-  &-link:hover,
-  &-link:focus {
-    fill: rgba(33, 150, 243, 1);
-    border-color: #2196f3;
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &-link:hover {
-    color: rgba(33, 150, 243, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+
 }
 .client-item {
   display: flex;
